@@ -7,7 +7,7 @@ async function dbConnect() {
     return;
   }
 
-  return mongoose.connect(process.env.MONGO_URI, {
+  return mongoose.connect(process.env.ATLAS_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useFindAndModify: false,
