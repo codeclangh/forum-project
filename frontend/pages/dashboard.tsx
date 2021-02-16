@@ -11,7 +11,18 @@ const dashboard = () => {
           <h1>Welcome {user?.name}</h1>
           <div className={styles.wrapper}>
             <div className={styles.menu}>a</div>
-            <div className={styles.feed}>a</div>
+            <div className={styles.feed}>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
+              odit quibusdam qui consectetur eaque, ad, facere quidem repellat,
+              rem repellendus in. Quae, molestiae dicta nihil earum aliquid
+              dolorem voluptatem repudiandae delectus quis aperiam cumque, aut
+              voluptas natus provident molestias, maxime corrupti quisquam
+              explicabo amet commodi. Perferendis nesciunt nulla officia neque!
+              Ut animi aut, explicabo nam assumenda accusantium repellat
+              recusandae numquam sint qui temporibus facere hic vero debitis
+              fugiat quis quo, dolorem eveniet suscipit nobis nisi quibusdam
+              eligendi voluptas nulla. Mollitia.
+            </div>
             <div className={styles.side}>a</div>
           </div>
         </div>
