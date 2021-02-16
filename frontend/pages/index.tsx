@@ -1,11 +1,14 @@
 import Head from "next/head";
 import Link from "next/link";
+import { useRouter } from "next/router";
+
 import { Jumbotron, Button } from "react-bootstrap";
 import Layout from "../components/Layout";
 import useUser from "../hooks/useUser";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
+  const { replace } = useRouter();
   const { user, authenticating, isAuthenticated } = useUser();
 
   if (authenticating) {
@@ -40,7 +43,7 @@ export default function Home() {
                 </div>
               </div>
             ) : (
-              <h1>Welcome, {user?.name}</h1>
+              replace("/dashboard")
             )}
           </main>
         </div>
