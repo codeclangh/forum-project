@@ -1,6 +1,5 @@
 import useSWR from "swr";
 import { useEffect, useState } from "react";
-import { setAccessToken } from "../token";
 import makeSecuredRequest, { getNewToken } from "../utils/makeSecuredRequest";
 
 const useUser = () => {

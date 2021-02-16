@@ -7,12 +7,17 @@ async function dbConnect() {
     return;
   }
 
-  return mongoose.connect(process.env.ATLAS_URI, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    useFindAndModify: false,
-    useCreateIndex: true,
-  });
+  return mongoose.connect(
+    process.env.NODE_ENV === "production"
+      ? process.env.ATLAS_URI
+      : process.env.MONGO_URI,
+    {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+      useFindAndModify: false,
+      useCreateIndex: true,
+    }
+  );
 }
 
 export default dbConnect;

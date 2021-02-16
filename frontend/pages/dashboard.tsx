@@ -1,3 +1,4 @@
+import Nav from "../components/Nav";
 import useUser from "../hooks/useUser";
 import styles from "../styles/dashboard.module.css";
 
@@ -10,7 +11,9 @@ const dashboard = () => {
           {/* Nav */}
           <h1>Welcome {user?.name}</h1>
           <div className={styles.wrapper}>
-            <div className={styles.menu}>a</div>
+            <div className={styles.menu}>
+              <Nav />
+            </div>
             <div className={styles.feed}>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
               odit quibusdam qui consectetur eaque, ad, facere quidem repellat,
