@@ -72,13 +72,12 @@ const Login = () => {
                     type={show ? "text" : "password"}
                     onChange={(e) => setPassword(e.target.value)}
                   ></Form.Control>
-                  <Button variant="secondary" onClick={(e) => setShow(!show)}>
+                  <Button variant="dark" onClick={(e) => setShow(!show)}>
                     {show ? (
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="16"
                         height="16"
-                        fill="currentColor"
                         className="bi bi-eye-slash"
                         viewBox="0 0 16 16"
                       >
