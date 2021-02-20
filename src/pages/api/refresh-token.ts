@@ -1,7 +1,7 @@
 import { NextApiRequest, NextApiResponse } from "next";
 import { verify } from "jsonwebtoken";
-import { getTokenCookie, setTokenCookie } from "../../utils/auth-cookie";
-import { generateAccessToken, generateRefreshToken } from "../../utils/token";
+import { getTokenCookie, setTokenCookie } from "@/utils/auth-cookie";
+import { generateAccessToken, generateRefreshToken } from "@/utils/token";
 
 interface IData {
   accessToken: string;

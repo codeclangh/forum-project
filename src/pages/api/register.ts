@@ -1,8 +1,8 @@
 import { NextApiRequest, NextApiResponse } from "next";
-import dbConnect from "../../lib/mongo";
-import User from "../../models/User";
-import { setTokenCookie } from "../../utils/auth-cookie";
-import { generateAccessToken, generateRefreshToken } from "../../utils/token";
+import dbConnect from "@/lib/mongo";
+import User from "@/models/User";
+import { setTokenCookie } from "@/utils/auth-cookie";
+import { generateAccessToken, generateRefreshToken } from "@/utils/token";
 
 export default async (req: NextApiRequest, res: NextApiResponse) => {
   if (req.method === "POST") {
@@ -14,12 +14,12 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
         remember,
         phone,
         username,
-        department,
+        department
       } = req.body;
       await dbConnect();
 
       const userExists = await User.findOne({
-        $or: [{ username: username }, { email: email }],
+        $or: [{ username: username }, { email: email }]
       });
 
       if (!userExists) {
@@ -29,7 +29,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
           password,
           email,
           phone,
-          department,
+          department
         });
 
         user.save();

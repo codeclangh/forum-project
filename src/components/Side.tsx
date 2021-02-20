@@ -8,12 +8,12 @@ import {
   Image,
   Navbar,
   Form,
-  Button,
+  Button
 } from "react-bootstrap";
 
 import styles from "../styles/forms.module.css";
 
-const Side = ({ form }) => {
+const Side: React.FC = ({ children }) => {
   return (
     <>
       <div className={styles.intro}>
@@ -31,7 +31,7 @@ const Side = ({ form }) => {
             <p className={styles.started}>Let's get you started</p>
           </div>
         </div>
-        {form}
+        {children}
       </div>
     </>
   );

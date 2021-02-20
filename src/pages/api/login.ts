@@ -1,8 +1,8 @@
 import { NextApiRequest, NextApiResponse } from "next";
-import dbConnect from "../../lib/mongo";
-import User from "../../models/User";
-import { setTokenCookie } from "../../utils/auth-cookie";
-import { generateAccessToken, generateRefreshToken } from "../../utils/token";
+import dbConnect from "@/lib/mongo";
+import User from "@/models/User";
+import { setTokenCookie } from "@/utils/auth-cookie";
+import { generateAccessToken, generateRefreshToken } from "@/utils/token";
 
 export default async (req: NextApiRequest, res: NextApiResponse) => {
   if (req.method === "POST") {

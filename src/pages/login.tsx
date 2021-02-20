@@ -17,7 +17,7 @@ const login = () => {
   const [remember, setRemember] = useState(false);
   const [loading, setLoading] = useState(false);
 
-  const handleSubmit = async (event) => {
+  const handleSubmit = async event => {
     event.preventDefault();
 
     try {
@@ -25,7 +25,7 @@ const login = () => {
       const { data } = await axios.post("/api/login", {
         email,
         password,
-        remember,
+        remember
       });
 
       if (data.refreshToken) {
@@ -52,51 +52,49 @@ const login = () => {
         <div className={styles.wrapper}>
           <Row className={styles.row}>
             <Col md={5}>
-              <Side
-                form={
-                  <Container>
-                    <Form
-                      onSubmit={handleSubmit}
-                      className={`${styles.form} ${styles.mobileOnly}`}
-                    >
-                      <p className={styles.title}>Sign In</p>
-                      <Form.Group controlId="email1">
-                        <Form.Label>Email</Form.Label>
-                        <Form.Control
-                          type="email"
-                          onChange={(e) => setEmail(e.target.value)}
-                        ></Form.Control>
-                      </Form.Group>
-                      <Form.Group controlId="password1">
-                        <Form.Label>Password</Form.Label>
-                        <Form.Control
-                          type="password"
-                          onChange={(e) => setPassword(e.target.value)}
-                        ></Form.Control>
-                      </Form.Group>
-                      <Row>
-                        <Col>
-                          {" "}
-                          <Button
-                            className={styles.btnMain}
-                            type="submit"
-                            variant="primary"
-                            disabled={loading}
-                          >
-                            Sign In
-                          </Button>
-                        </Col>
-                        <Col className={styles.noAccount}>
-                          Don't have an account? <br />{" "}
-                          <span>
-                            <Link href="/register">Create One</Link>
-                          </span>
-                        </Col>
-                      </Row>
-                    </Form>
-                  </Container>
-                }
-              />
+              <Side>
+                <Container>
+                  <Form
+                    onSubmit={handleSubmit}
+                    className={`${styles.form} ${styles.mobileOnly}`}
+                  >
+                    <p className={styles.title}>Sign In</p>
+                    <Form.Group controlId="email1">
+                      <Form.Label>Email</Form.Label>
+                      <Form.Control
+                        type="email"
+                        onChange={e => setEmail(e.target.value)}
+                      ></Form.Control>
+                    </Form.Group>
+                    <Form.Group controlId="password1">
+                      <Form.Label>Password</Form.Label>
+                      <Form.Control
+                        type="password"
+                        onChange={e => setPassword(e.target.value)}
+                      ></Form.Control>
+                    </Form.Group>
+                    <Row>
+                      <Col>
+                        {" "}
+                        <Button
+                          className={styles.btnMain}
+                          type="submit"
+                          variant="primary"
+                          disabled={loading}
+                        >
+                          Sign In
+                        </Button>
+                      </Col>
+                      <Col className={styles.noAccount}>
+                        Don't have an account? <br />{" "}
+                        <span>
+                          <Link href="/register">Create One</Link>
+                        </span>
+                      </Col>
+                    </Row>
+                  </Form>
+                </Container>
+              </Side>
             </Col>
             <Col md={7}>
               <Container>
@@ -112,14 +110,14 @@ const login = () => {
                       <Form.Label>Email</Form.Label>
                       <Form.Control
                         type="email"
-                        onChange={(e) => setEmail(e.target.value)}
+                        onChange={e => setEmail(e.target.value)}
                       ></Form.Control>
                     </Form.Group>
                     <Form.Group controlId="password">
                       <Form.Label>Password</Form.Label>
                       <Form.Control
                         type="password"
-                        onChange={(e) => setPassword(e.target.value)}
+                        onChange={e => setPassword(e.target.value)}
                       ></Form.Control>
                     </Form.Group>
                     <Row>

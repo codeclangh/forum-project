@@ -1,9 +1,12 @@
 import { NextApiRequest, NextApiResponse } from "next";
-import dbConnect from "../../lib/mongo";
-import User from "../../models/User";
-import getUserID from "../../utils/get-userID";
+import dbConnect from "@/lib/mongo";
+import User, { IUserSchema } from "@/models/User";
+import getUserID from "@/utils/get-userID";
 
-export default async (req: NextApiRequest, res: NextApiResponse) => {
+export default async (
+  req: NextApiRequest,
+  res: NextApiResponse<Omit<IUserSchema, "password">>
+) => {
   try {
     await dbConnect();
 
