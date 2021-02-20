@@ -46,8 +46,9 @@
   text-transform: capitalize;
   font-weight: bold;
   padding: 10px 10px;
-  background-color: #6632a4 !important;
-  border: #6632a4 !important;
+  background-color: green !important;
+  opacity: 0.7;
+  border: green !important;
 
   border-radius: 0 !important;
 }
