@@ -8,7 +8,7 @@ import {
   Image,
   Navbar,
   Form,
-  Button
+  Button,
 } from "react-bootstrap";
 
 import styles from "../styles/forms.module.css";

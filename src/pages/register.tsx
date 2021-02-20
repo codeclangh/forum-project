@@ -63,7 +63,7 @@ const Register = () => {
           <Row className={styles.row}>
             <Col md={5}>
               <Side
-                form={
+                children={
                   <Container>
                     <Form
                       onSubmit={handleSubmit}
