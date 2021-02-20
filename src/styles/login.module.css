@@ -2,17 +2,16 @@
   background-color: #e5e5e5;
 }
 .formContainer {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  display: grid;
+  place-items: center;
   min-height: 100vh;
-  padding: 40px;
-  justify-content: center;
+  padding: 20px 20px;
+
   font-family: "Sen", sans-serif;
 }
 
 .form {
-  width: 500px;
+  width: 40%;
   padding: 60px 60px 50px 40px;
   box-shadow: 0 0px 10px 0 rgba(0, 0, 0, 0.3);
   font-family: "Sen", sans-serif;
@@ -41,7 +40,7 @@
 .btnMain {
   text-transform: capitalize;
   font-weight: bold;
-  padding: 10px 10px;
+  padding: 12px 20px;
   background-color: #008000 !important;
   border: #008000 !important;
   border-radius: 0 !important;
@@ -62,25 +61,21 @@
   text-decoration: none;
 }
 
-@media screen and (max-width: 767px) {
-  .desktopOnly {
-    display: none;
-  }
-
-  .mobileOnly {
-    margin: 0 5%;
-    width: 90%;
-  }
-
+@media screen and (max-width: 600px) {
   .form {
-    padding: 50px;
-    color: black;
-    margin-bottom: 120px;
+    width: 80%;
   }
 }
 
-@media screen and (min-width: 768px) {
-  .mobileOnly {
-    display: none;
+@media (min-width: 601px) and (max-width: 766px) {
+  .form {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .form {
+    /* padding: 50px; */
+    color: black;
   }
 }
