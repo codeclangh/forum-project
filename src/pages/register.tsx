@@ -122,7 +122,7 @@ const Register = () => {
                       type={show ? "text" : "password"}
                       onChange={(e) => setPassword(e.target.value)}
                     ></Form.Control>
-                    <Button variant="danger" onClick={(e) => setShow(!show)}>
+                    <Button variant="dark" onClick={(e) => setShow(!show)}>
                       {show ? (
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -162,7 +162,7 @@ const Register = () => {
                       type={show ? "text" : "password"}
                       onChange={(e) => setConfirmPassword(e.target.value)}
                     ></Form.Control>
-                    <Button variant="danger" onClick={(e) => setShow(!show)}>
+                    <Button variant="dark" onClick={(e) => setShow(!show)}>
                       {show ? (
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
