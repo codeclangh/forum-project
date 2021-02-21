@@ -1,4 +1,36 @@
 .wrapper {
+  position: relative;
   display: grid;
-  grid-template-columns: 20% 60% 20%;
+  grid-template-columns: 75% 25%;
+  margin-left: 300px;
+}
+
+.feed {
+  padding: 30px 10px;
+  box-shadow: 0 0px 2px 0 rgba(0, 0, 0, 0.1);
+}
+
+.menu {
+  position: fixed;
+  width: 500px;
+  left: 0;
+  right: 0;
+}
+
+.feed::-webkit-scrollbar {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .menu {
+    display: none;
+  }
+  .wrapper {
+    margin-left: 0;
+    grid-template-columns: 100%;
+  }
+
+  .feed {
+    padding: 0;
+  }
 }

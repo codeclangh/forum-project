@@ -1,43 +1,44 @@
 import { Container } from "react-bootstrap";
 import styles from "../styles/nav.module.css";
 import Link from "./Link";
-
+import Header from "../components/Nav-one";
 export const links = [
   {
-    icon: "",
-    title: "Home"
+    icon: "bi bi-house",
+    title: "Home",
   },
   {
-    icon: "",
-    title: "Explore"
+    icon: "bi bi-search",
+    title: "Explore",
   },
   {
-    icon: "",
-    title: "Trending"
+    icon: "bi bi-bell",
+    title: "Notifications",
   },
   {
-    icon: "",
-    title: "Department"
+    icon: "bi bi-chat-left",
+    title: "Messages",
   },
   {
-    icon: "",
-    title: "Bookmarks"
-  }
+    icon: "bi bi-bookmarks",
+    title: "Bookmarks",
+  },
 ];
 
 const Nav = () => {
   return (
-    <div>
-      <Container>
-        <h3>uForum</h3>
-
-        <div className={styles.main}>
-          {links.map(link => (
-            <Link link={link} />
-          ))}
-        </div>
-      </Container>
-    </div>
+    <>
+      <div className="nav-wrapper">
+        <Header />
+        <Container>
+          <div className={styles.main}>
+            {links.map((link) => (
+              <Link link={link} />
+            ))}
+          </div>
+        </Container>
+      </div>
+    </>
   );
 };
 

@@ -7,7 +7,9 @@ interface ILinkProps {
 const Link: React.FC<ILinkProps> = ({ link }) => {
   return (
     <div>
-      <span className="mr-3">{link.icon}</span>
+      <span className="mr-3">
+        <i className={link.icon}></i>
+      </span>
       <span className="text">{link.title}</span>
     </div>
   );
