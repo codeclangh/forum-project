@@ -16,7 +16,7 @@
   text-transform: lowercase;
   position: relative;
   z-index: 2;
-
+  color: green !important;
   font-weight: bold;
 
   align-self: flex-start;

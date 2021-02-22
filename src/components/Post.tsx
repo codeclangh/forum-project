@@ -42,6 +42,10 @@ const Post = ({ post }) => {
           </div>
         </div>
       </div>
+      <div className={styles.more}>
+        {" "}
+        <i className="bi bi-three-dots"></i>
+      </div>
     </div>
   );
 };

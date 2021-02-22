@@ -4,10 +4,27 @@
   margin-bottom: 20px;
 }
 
-.mobinav {
-  margin-top: 10px;
-  font-size: 1.3rem;
+.mobiNavTop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: grid;
+  font-size: 1rem !important;
+  grid-template-columns: 33% 33% 33%;
+  place-items: center;
 
+  background-color: white;
+}
+
+.icon {
+  font-size: 1.5rem !important;
+}
+.mobinav {
+  margin-top: 20px;
+  font-size: 1.3rem;
+  left: 0;
+  padding: 15px 10px;
   position: fixed;
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;

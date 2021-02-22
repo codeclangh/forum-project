@@ -7,6 +7,7 @@ import Post from "../components/Post";
 import Header from "@/components/Nav-one";
 import Head from "next/head";
 import MobiNav from "@/components/MobiNav";
+import MobiNavTop from "@/components/MobiNavTop";
 
 const dashboard = () => {
   const { user, isAuthenticated, authenticating } = useUser();
@@ -29,6 +30,7 @@ const dashboard = () => {
             <div className={styles.side}></div>
 
             <div className={styles.menu2}>
+              <MobiNavTop />
               <MobiNav />
             </div>
           </div>
