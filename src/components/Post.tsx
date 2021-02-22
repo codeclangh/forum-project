@@ -44,7 +44,7 @@ const Post = ({ post }) => {
       </div>
       <div className={styles.more}>
         {" "}
-        <i className="bi bi-three-dots"></i>
+        <i className="bi bi-three-dots-vertical"></i>
       </div>
     </div>
   );
