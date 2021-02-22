@@ -3,3 +3,15 @@
 
   margin-bottom: 20px;
 }
+
+.mobinav {
+  margin-top: 10px;
+  font-size: 1.4rem;
+  padding: 10px;
+  position: fixed;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+}
