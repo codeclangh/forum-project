@@ -33,7 +33,7 @@ const Nav = () => {
         <Container>
           <div className={styles.main}>
             {links.map((link) => (
-              <Link link={link} />
+              <Link key={link.title} link={link} />
             ))}
           </div>
         </Container>

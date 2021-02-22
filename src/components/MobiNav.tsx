@@ -24,7 +24,7 @@ const MobiNav = () => {
         <Container>
           <div className={styles.mobinav}>
             {links.map((link) => (
-              <Link link={link} />
+              <Link key={link.icon} link={link} />
             ))}
           </div>
         </Container>
