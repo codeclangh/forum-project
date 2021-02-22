@@ -1,6 +1,6 @@
 import { Container } from "react-bootstrap";
 import styles from "../styles/nav.module.css";
-import Link from "./Link";
+import Link from "./MobiLink";
 
 export const links = [
   {
