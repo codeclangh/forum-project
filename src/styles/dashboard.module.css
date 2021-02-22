@@ -21,7 +21,11 @@
   display: none;
 }
 
-@media screen and (max-width: 600px) {
+.menu2 {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
   .menu {
     display: none;
   }
@@ -32,5 +36,9 @@
 
   .feed {
     padding: 0;
+  }
+
+  .menu2 {
+    display: block;
   }
 }
