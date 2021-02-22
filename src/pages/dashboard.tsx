@@ -26,7 +26,7 @@ const dashboard = () => {
                 <Post key={post.id} post={post} />
               ))}
             </div>
-            <div className={styles.side}>a</div>
+            <div className={styles.side}></div>
 
             <div className={styles.menu2}>
               <MobiNav />

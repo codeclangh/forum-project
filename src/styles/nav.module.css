@@ -6,11 +6,12 @@
 
 .mobinav {
   margin-top: 10px;
-  font-size: 1.4rem;
-  padding: 10px;
+  font-size: 1.3rem;
+
   position: fixed;
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
+  place-items: center;
   bottom: 0;
   width: 100%;
   background-color: white;
