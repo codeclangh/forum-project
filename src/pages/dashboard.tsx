@@ -23,7 +23,7 @@ const dashboard = () => {
             </div>
             <div className={styles.feed}>
               {posts.map((post) => (
-                <Post post={post} />
+                <Post key={post.id} post={post} />
               ))}
             </div>
             <div className={styles.side}>a</div>

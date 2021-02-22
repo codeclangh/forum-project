@@ -1,6 +1,6 @@
 import { Container } from "react-bootstrap";
 import styles from "../styles/nav.module.css";
-import Link from "./Link";
+import Link from "./MobiLink";
 
 export const links = [
   {
@@ -24,7 +24,7 @@ const MobiNav = () => {
         <Container>
           <div className={styles.mobinav}>
             {links.map((link) => (
-              <Link link={link} />
+              <Link key={link.icon} link={link} />
             ))}
           </div>
         </Container>

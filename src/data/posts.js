@@ -118,7 +118,7 @@ const posts = [
     ],
   },
   {
-    id: 3,
+    id: 6,
     author: {
       name: "John Barnes",
       username: "jaybarnes",
@@ -141,7 +141,7 @@ const posts = [
     ],
   },
   {
-    id: 3,
+    id: 7,
     author: {
       name: "John Barnes",
       username: "jaybarnes",
